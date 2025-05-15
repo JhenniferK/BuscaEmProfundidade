@@ -1,6 +1,6 @@
 def dfs(inicio, fim):
-    pilha = [(inicio, (inicio))]
-    visitado = set()
+    pilha = [(inicio, [inicio])]
+    visitado = set() #evita repetição
     nosVisitados = 0
 
     while pilha:
